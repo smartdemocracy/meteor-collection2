@@ -1,30 +1,30 @@
 /* global Package */
 
 Package.describe({
-  name: "smartdemocracy:collection2",
+  name: "antoniopresto:collection2",
   summary: "Automatic validation of insert and update operations on the client and server.",
   version: "2.10.0",
-  git: "https://github.com/aldeed/meteor-collection2.git"
+  git: "https://github.com/smartdemocracy/meteor-collection2.git"
 });
 
 Package.onUse(function(api) {
   // Automatically include all packages for now
   api.use([
-    'smartdemocracy:collection2-core@1.2.0',
-    'aldeed:schema-index@1.1.0',
-    'aldeed:schema-deny@1.1.0',
+    'antoniopresto:collection2-core@1.2.0',
+    'antoniopresto:schema-index@1.1.0',
+    'antoniopresto:schema-deny@1.1.0',
   ]);
 
   api.imply([
-    'smartdemocracy:collection2-core',
-    'aldeed:schema-index',
-    'aldeed:schema-deny',
+    'antoniopresto:collection2-core',
+    'antoniopresto:schema-index',
+    'antoniopresto:schema-deny',
   ]);
 });
 
 Package.onTest(function(api) {
-  api.use('aldeed:collection2');
-  api.use('aldeed:simple-schema@2.0.0-rc.1');
+  api.use('antoniopresto:collection2');
+  api.use('antoniopresto:simple-schema');
   api.use('tinytest@1.0.0');
   api.use('test-helpers@1.0.0');
   api.use('underscore@1.0.0');
