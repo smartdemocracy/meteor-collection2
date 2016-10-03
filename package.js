@@ -3,14 +3,14 @@
 Package.describe({
   name: "antoniopresto:collection2",
   summary: "Automatic validation of insert and update operations on the client and server.",
-  version: "2.10.0",
+  version: "2.10.0-rc2",
   git: "https://github.com/smartdemocracy/meteor-collection2.git"
 });
 
 Package.onUse(function(api) {
   // Automatically include all packages for now
   api.use([
-    'antoniopresto:collection2-core@1.2.0',
+    'antoniopresto:collection2-core@1.2.1-rc.1',
     'antoniopresto:schema-index@1.1.0',
     'antoniopresto:schema-deny@1.1.0',
   ]);
